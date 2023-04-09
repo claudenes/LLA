@@ -1,0 +1,19 @@
+﻿@model LLA.Application.DTOs.ProjectDTO
+
+<h3>Projects Details</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Titulo)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Titulo)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Descricao)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Descricao)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.DtCriacao)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.DtCriacao)</dd>
+       
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
